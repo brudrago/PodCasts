@@ -6,8 +6,11 @@ protocol SearchViewProtocol: UIView {
 
 final class SearchView: UIView {
     
-}
-
-extension SearchView: SearchViewProtocol {
+    private lazy var tableView: UITableView = {
+       let table = UITableView()
+        return table
+    }()
     
 }
+
+extension SearchView: SearchViewProtocol {}
