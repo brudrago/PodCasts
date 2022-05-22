@@ -1,4 +1,5 @@
 import UIKit
+import SnapKit
 
 protocol SearchViewProtocol: UIView {
     
@@ -11,6 +12,16 @@ final class SearchView: UIView {
         return table
     }()
     
+}
+
+extension SearchView: ViewCodeProtocol {
+    func setupSubviews() {
+        
+    }
+    
+    func setupConstraints() {
+        
+    }
 }
 
 extension SearchView: SearchViewProtocol {}
